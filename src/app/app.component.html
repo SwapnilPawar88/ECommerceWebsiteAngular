@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Of Products</title>
+</head>
+<body>
+  
+  <div class="inner-div">
+    <p class="top-nav">
+        <a routerLink="/ProductList">List Of Products | </a>
+        <a routerLink="/cardProducts" >Card<span *ngIf="cardItemLength.length >= 1">({{ cardItemLength.length}})</span></a>
+    </p>
+    <router-outlet></router-outlet>
+  </div>
+</body>
+</html>

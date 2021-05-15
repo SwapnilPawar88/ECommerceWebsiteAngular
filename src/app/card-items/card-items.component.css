@@ -1,0 +1,61 @@
+.mainCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 22%;
+    margin: 15px;
+    border: 1px white solid;
+  }
+
+  #checkOut{
+    padding: 1rem 3rem;
+    outline: none;
+    font-size: 400;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #74b9ff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+#checkOut:hover{
+  background-color: darkgreen;
+}
+
+.card:hover{
+    border-color: blue;
+    
+}
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+  h2,p{
+      text-align: center;
+  }
+
+  img{
+    width: 100%;
+    height : 300px;
+  }
+
+  #deleteCardItem{
+    display: flex;
+    padding: 13px 25px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #e50606;
+    margin: auto;
+  }

@@ -1,0 +1,49 @@
+.mainCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 49%;
+    border: 1px white solid;
+    background-color: white;
+  }
+  
+  .container {
+    padding: 2px 16px;
+    text-align: left;
+  }
+
+  .productPrice{
+      border:3px rgb(179, 169, 169) dashed;
+      padding: 10px;
+      color: red;
+      text-align: center;
+  }
+
+  .productTitle{
+      color: blueviolet;
+  }
+
+  #addToCard{
+    padding: 1rem 3rem;
+    outline: none;
+    font-size: 400;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #74b9ff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #addToCard:hover{
+    background-color: rgb(148, 214, 62);
+  }
+
+  img{
+    width: 70%;
+    height: 300px;
+    margin-left: 80px;
+    margin-top: 30px;
+  }

@@ -1,0 +1,60 @@
+<div class="mainDiv">
+    <h2>Enter Delivery Address</h2>
+    <form (ngSubmit)="onSubmit()">
+        <table>
+            <tr>
+                <th>
+                    <label for="title">Full Address</label> 
+                </th>
+                <th>
+                    <input  [(ngModel)]="userAddress.DeliveryAddress" name="address" type="text" required  size="30" min="20">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="url">Enter Full Name</label>
+                </th>
+                <th>
+                    <input  [(ngModel)]="userAddress.Name" name="name" type="text" required size="30">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="url">Enter Contact Number</label>
+                </th>
+                <th>
+                    <input  [(ngModel)]="userAddress.ContactNo" name="contact" type="text" required size="30" minlength="10" maxlength="10">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="delevaryOption">Select Delivery Address</label>
+                </th>
+                <th>
+                    <select name="delevaryOption" [(ngModel)]="userAddress.deliverOption" class="selectItem">
+                        <option value={{Standard_delivery}} >Standard delivery</option>
+                        <option value={{Fast_delivery}} >Fast delivery($10)</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="totalCost" >Total Order Cost</label>
+                </th>
+                <th>
+                    <div *ngIf="userAddress.deliverOption == Standard_delivery">
+                        <p class="PriceClass" >{{totalPrice}} $</p>
+                    </div>
+                    <div *ngIf="userAddress.deliverOption == Fast_delivery">
+                        <p class="PriceClass" >{{totalPrice + 10}} $ (Extra $10)</p>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th rowspan="2">
+                    <input type="submit" value="Submit" id='SubmitBtn'>
+                </th>
+            </tr>
+        </table>
+    </form>
+</div>

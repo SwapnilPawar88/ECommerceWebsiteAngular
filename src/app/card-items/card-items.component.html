@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Items</title>
+</head>
+<body>
+    <div class="mainCardContainer">
+        <div class="card" *ngFor="let data of cardProducts">
+                <img src="{{data.image}}" alt="Avatar">
+            <div class="container">
+              <h4><b>Price : {{data.price}} $</b></h4> 
+              <p>{{data.title}}</p> 
+            </div>
+            <button id="deleteCardItem" (click)="deleteCard(data.id)" >Delete Item</button><br>
+        </div>
+    </div>
+    <a [routerLink]="['/checkOutPage']"><button id="checkOut">Check Out</button></a>
+</body>
+</html>

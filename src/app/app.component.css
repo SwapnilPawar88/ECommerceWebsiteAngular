@@ -1,0 +1,41 @@
+
+.inner-div{
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6ef;
+    width: 90%;
+    margin: auto;
+    height: auto;
+}
+
+.top-nav{
+    background-color:rgb(144, 80, 204);
+    margin-top: 0px;
+    padding: 3px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+
+.addComments{
+    margin: 10px 10px;
+}
+
+.top-nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+label{
+    padding: 10px;
+}
+
+input{
+    margin: 10px;
+}

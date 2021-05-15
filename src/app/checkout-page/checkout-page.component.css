@@ -1,0 +1,51 @@
+table,tr,th{
+    /* border: 1px rgb(59, 30, 189) solid; */
+    padding: 0px;
+
+}
+th{
+    padding: 10px;
+}
+
+.optionValue{
+    padding: 10px;
+}
+
+#SubmitBtn{
+    padding: 13px 34px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #74b9ff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    align-items:flex-start;
+}
+
+h2{
+    text-align: center;
+    color: blue;
+}
+
+input{
+    padding: 5px;
+    outline: none;
+}
+
+.PriceClass{
+    font-size: 20px;
+}
+
+option{
+    font-size: 20px;
+}
+
+select{
+    padding: 5px 60px;
+}
